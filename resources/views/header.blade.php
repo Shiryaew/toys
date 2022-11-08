@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Toys</title>
+</html>
+<title>Toys</title>
         <style>
             html {
                 height: 100%;
@@ -30,44 +28,17 @@
                 font-size: 36px;
 
             }
-            .btn {
-                margin: 10px;
-                margin-bottom: 0;
-            }
-            .btn__container {
-                height: 100%;
-                border: 1px solid;
-                display: flex;
-                width: 200px;
-                flex-direction: column;
-                background-color: white;
-            }
+           
 
             
 
         </style>
-    </head>
-    <body>
-        <div class="header">
+		<body>
+		<div class="header">
             <div class="header__name">
                 Производство детских игрушек
             </div>
 
         </div>
-        <div class="btn__container">
-            <button class="btn btn__first">
-                <div>
-                    Первая кнопка
-                </div>
-            </button>
-            <button class="btn btn__second">
-                <div>
-                    Вторая кнопка
-                </div>
-            </button>
-
-        </div>
-            
-
-    </body>
+		</body>
 </html>
