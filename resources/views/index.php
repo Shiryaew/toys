@@ -19,6 +19,7 @@
                 overflow-y: auto;
                 overflow-x: hidden;
 
+
             }
             .header {
                 position: sticky;
@@ -30,11 +31,25 @@
                 align-items: center;
                 justify-content: center;
             }
+            
             .header__name {
                 color: white;
                 font-size: 36px;
 
             }
+            .btn {
+                margin: 10px;
+                margin-bottom: 0;
+            }
+            .btn__container {
+                height: 100%;
+                border: 1px solid;
+                display: flex;
+                width: 200px;
+                flex-direction: column;
+            }
+
+            
 
         </style>
 
@@ -48,6 +63,19 @@
 
         </div>
         <div class="root">
+            <div class="btn__container">
+                <button class="btn btn__first">
+                    <div>
+                        Первая кнопка
+                    </div>
+                </button>
+                <button class="btn btn__second">
+                    <div>
+                        Вторая кнопка
+                    </div>
+                </button>
+
+            </div>
             
 
         </div>
