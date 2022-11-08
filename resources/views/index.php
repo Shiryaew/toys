@@ -11,15 +11,7 @@
                 margin: 0;
                 height: 200%;
                 width: 100%;
-            }
-            .root {
                 background-color: lightgray;
-                height: 100%;
-                width: 100%;
-                overflow-y: auto;
-                overflow-x: hidden;
-
-
             }
             .header {
                 position: sticky;
@@ -53,8 +45,6 @@
             
 
         </style>
-
-        
     </head>
     <body>
         <div class="header">
@@ -63,22 +53,20 @@
             </div>
 
         </div>
-        <div class="root">
-            <div class="btn__container">
-                <button class="btn btn__first">
-                    <div>
-                        Первая кнопка
-                    </div>
-                </button>
-                <button class="btn btn__second">
-                    <div>
-                        Вторая кнопка
-                    </div>
-                </button>
-
-            </div>
-            
+        <div class="btn__container">
+            <button class="btn btn__first">
+                <div>
+                    Первая кнопка
+                </div>
+            </button>
+            <button class="btn btn__second">
+                <div>
+                    Вторая кнопка
+                </div>
+            </button>
 
         </div>
+            
+
     </body>
 </html>
