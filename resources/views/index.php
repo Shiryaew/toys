@@ -30,6 +30,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                box-shadow: 0 5px 5px gray;
             }
             
             .header__name {
