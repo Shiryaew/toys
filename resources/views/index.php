@@ -18,7 +18,7 @@
                 top: 0;
                 width: 100%;
                 height: 100px;
-                background-color: gray;
+                background-color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -26,7 +26,7 @@
             }
             
             .header__name {
-                color: white;
+                color: black;
                 font-size: 36px;
 
             }
@@ -40,6 +40,7 @@
                 display: flex;
                 width: 200px;
                 flex-direction: column;
+                background-color: white;
             }
 
             
