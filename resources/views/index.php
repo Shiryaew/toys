@@ -43,9 +43,24 @@
                 background-color: white;
             }
 
-            .agent table {
+            .central_container {
+                display: flex;
+                flex-direction: column;
                 margin: 220px;
                 width: 800px;
+            }
+
+            .agent table td {
+                padding: 5px;
+            }
+
+            .agent_type {
+                text-transform: uppercase;
+            }
+
+            .logo {
+                height: 25px;
+                width: 25px;
             }
             
 
@@ -71,19 +86,27 @@
             </button>
 
         </div>
+    <div class="central_container">
         <div class="agent table">
             <table>
             <?php
 	        require("ini.php");
-	        $query="SELECT Title, (SELECT Title FROM agenttype WHERE agenttype.ID=agent.AgentTypeID) AS agenttype, Address, INN, KPP, DirectorName, Phone, Email, Priority, Logo FROM agent";
+	        $query="SELECT Title, (SELECT Title FROM agenttype WHERE agenttype.ID=agent.AgentTypeID) 
+            AS agenttype, Address, INN, KPP, DirectorName, Phone, Email, Priority, Logo FROM agent 
+            ORDER BY Priority desc";
             $res=mysqli_query($link,$query);
         	while ($row=mysqli_fetch_array($res)) {
 			echo "<tr>";
-			echo "<td><img src=\"".$row["Logo"]."\"></td><td>".$row['Title']."</td><td>".$row["agenttype"]."</td><td>".$row["Address"]."</td><td>".$row["INN"]."</td><td>".$row["KPP"]."</td><td>".$row["DirectorName"]."</td><td>".$row["Phone"]."</td><td>".$row["Email"]."</td><td>".$row["Priority"]."</td>";
-				echo "</tr>";
-				};
+                if (file_exists("../toys/resources/images".$row['Logo'])) {
+        			echo "<td><img class=\"logo\" src=\"../toys/resources/images".$row['Logo']."\"/></td><td class=\"agent_type\">".$row['agenttype']."</td><td>".$row['Title']."</td><td>".$row['Priority']."</td>";
+                } else {
+                    echo "<td></td><td class=\"agent_type\">".$row['agenttype']."</td><td>".$row['Title']."</td><td>".$row['Priority']."</td>";            
+                }                
+                echo "</tr>";
+			};
 				?>
 				</table>
-				</div>    
+				</div>
+            </div>
     </body>
 </html>
