@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Toys</title>
+        <link href="../toys/resources/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <style>
             html {
                 height: 100%;
@@ -66,11 +67,12 @@
         </style>
     </head>
     <body>
+        <script src="../toys/resources/js/bootstrap.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
         <div class="header">
             <div class="header__name">
                 Производство детских игрушек
             </div>
-
         </div>
         <div class="btn__container">
             <button class="btn btn__first">
@@ -83,7 +85,6 @@
                     Вторая кнопка
                 </div>
             </button>
-
         </div>
         <div class="central_container">
             <div class="agent table">
