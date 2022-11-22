@@ -47,6 +47,9 @@
             .navbar-brand:hover {
                 background-color: black;
             }
+            li:hover {
+                background-color: lightgray;
+            }
             .custom-login{
                 height: 500px;
                 padding-top: 100px;
