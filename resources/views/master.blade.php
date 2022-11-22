@@ -17,6 +17,35 @@
             .navbar-default {
                 position: sticky;
                 top: 0;
+                min-height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container-fluid {
+                flex: 1;
+                margin-right: 0;
+                margin-left: 0;
+            }
+            .navbar-nav {
+                margin-left: 30px;
+                
+            }
+            .navbar-header {
+                margin-left: 10px !important;
+            }
+            .navbar-header:hover {
+                background-color: gray;
+                color: white;
+                border-radius: 50px;
+            }
+            .navbar-brand {
+                background-color: white;
+                border-radius: 50px;
+                margin-left: 0px !important;
+            }
+            .navbar-brand:hover {
+                background-color: black;
             }
             .custom-login{
                 height: 500px;
