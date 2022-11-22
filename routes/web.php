@@ -15,7 +15,7 @@ use App\Http\Controllers\AgentController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('master');
 });
 Route::get('/auth', function () {
     return view('auth');
