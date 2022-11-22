@@ -5,14 +5,14 @@
     <thead>
     <tr>
         <th scope="col">№</th>
-        <th scope="col">Title</th>
-        <th scope="col">Product Type</th>
-        <th scope="col">Article</th>
-        <th scope="col">Description</th>
-        <th scope="col">Image</th>
+        <th scope="col">Название</th>
+        <th scope="col">Тип Продукта</th>
+        <th scope="col">Артикул</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Изображение</th>
         <th scope="col">Product Person Count</th>
         <th scope="col">Production Workshop Number</th>
-        <th scope="col">Min Cost For Agent</th>
+        <th scope="col">Минимальная стоимость для агента</th>
     </tr>
     </thead>
     <tbody>
