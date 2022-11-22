@@ -76,6 +76,17 @@
             li:hover {
                 background-color: lightgray;
             }
+            .startcontent {
+                min-height: 100vh;
+                height: 100vh;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .welcome {
+                font-size: 30px;
+            }
             .custom-login{
                 height: 500px;
                 padding-top: 100px;
