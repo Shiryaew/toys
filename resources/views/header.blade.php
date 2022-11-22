@@ -17,8 +17,8 @@ use App\Http\Controllers\ProductController;
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="/agent">Agents</a></li>
-          <li><a href="/product">Catalog</a></li>
+          <li><a href="/product">Каталог</a></li>
+          <li><a href="/agent">Агенты</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           @if(Session::has('user'))
