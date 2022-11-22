@@ -28,6 +28,7 @@
                 border-width: 0;
                 box-shadow: 0 5px 5px lightgray;
                 margin-bottom: 0;
+                font-size: 17px;
             }
             .container-fluid {
                 flex: 1;
