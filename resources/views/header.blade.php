@@ -26,11 +26,11 @@ use App\Http\Controllers\ProductController;
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="/logout">Logout</a></li>
+              <li><a href="/logout">Выйти</a></li>
             </ul>
           </li>
           @else
-          <li><a href="/login">Login</a></li>
+          <li><a href="/login">Логин</a></li>
           @endif
         </ul>
       </div><!-- /.navbar-collapse -->
