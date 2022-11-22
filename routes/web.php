@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AgentCardController;
+
 use App\Http\Controllers\ToyController;
 use App\Http\Controllers\AgentController;
 /*
@@ -17,6 +19,7 @@ use App\Http\Controllers\AgentController;
 Route::get('/', function () {
     return view('start');
 });
+
 Route::get('/auth', function () {
     return view('auth');
 });

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Toys</title>
+        <link href="../toys/resources/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <style>
             html {
                 height: 100%;
@@ -43,20 +44,35 @@
                 background-color: white;
             }
 
-            .agent table {
+            .central_container {
+                display: flex;
+                flex-direction: column;
                 margin: 220px;
                 width: 800px;
             }
-            
+
+            .agent table td {
+                padding: 5px;
+            }
+
+            .agent_type {
+                text-transform: uppercase;
+            }
+
+            .logo {
+                height: 25px;
+                width: 25px;
+            }      
 
         </style>
     </head>
     <body>
+        <script src="../toys/resources/js/bootstrap.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
         <div class="header">
             <div class="header__name">
                 Производство детских игрушек
             </div>
-
         </div>
         <div class="btn__container">
             <button class="btn btn__first">
@@ -69,21 +85,16 @@
                     Вторая кнопка
                 </div>
             </button>
-
         </div>
-        <div class="agent table">
-            <table>
-            <?php
-	        require("ini.php");
-	        $query="SELECT Title, (SELECT Title FROM agenttype WHERE agenttype.ID=agent.AgentTypeID) AS agenttype, Address, INN, KPP, DirectorName, Phone, Email, Priority, Logo FROM agent";
-            $res=mysqli_query($link,$query);
-        	while ($row=mysqli_fetch_array($res)) {
-			echo "<tr>";
-			echo "<td><img src=\"".$row["Logo"]."\"></td><td>".$row['Title']."</td><td>".$row["agenttype"]."</td><td>".$row["Address"]."</td><td>".$row["INN"]."</td><td>".$row["KPP"]."</td><td>".$row["DirectorName"]."</td><td>".$row["Phone"]."</td><td>".$row["Email"]."</td><td>".$row["Priority"]."</td>";
-				echo "</tr>";
-				};
-				?>
-				</table>
-				</div>    
+        <div class="central_container">
+            <div class="agent table">
+                <table>
+                    <?php
+	                    require("ini.php");
+	                    require("agenttable.php");
+				    ?>
+		        </table>
+		    </div>
+        </div>
     </body>
 </html>
