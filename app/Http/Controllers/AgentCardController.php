@@ -18,7 +18,7 @@ class AgentCardController extends Controller
     {
 		$data= DB::table('agent')
             ->join('agenttype','agent.AgentTypeID','=','agenttype.ID')
-            ->select('agent.ID','agent.Title','agenttype.Title as agType','agent.Phone','agent.Logo','agent.Priority')
+            ->select('agenttype.Title as agType','agent.INN','agent.KPP','agent.DirectorName','agent.Email','agent.Address','agent.Title','agent.Phone','agent.Logo','agent.Priority')
             ->orderBy('agent.ID')
             ->get();
         return view('agentcard',['agentcard'=>$data]);
