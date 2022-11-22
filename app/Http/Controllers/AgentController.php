@@ -22,8 +22,7 @@ class AgentController extends Controller
             ->orderBy('agent.ID')
             ->get();
         return view('agent',['agent'=>$data]);
-        $data= agent::all();
-        return view('agent',['agent'=>$data]);
+
     }
 
 }

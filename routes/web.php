@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ToyController;
+use App\Http\Controllers\AgentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,4 @@ Route::get('/auth', function () {
     return view('auth');
 });
 Route::get('product',[ToyController::class,'index']);
+Route::get('agent', [AgentController::class,'index']);
