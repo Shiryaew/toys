@@ -59,9 +59,7 @@
                 <a href="/product">Продукты</a>
             </button>
             <button class="btn btn__second">
-                <div>
-                    Вторая кнопка
-                </div>
+            <a href="/agent">Агенты</a>
             </button>
 
         </div>
