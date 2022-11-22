@@ -1,4 +1,4 @@
-<?php 
+<?php
 use App\Http\Controllers\ProductController;
 ?>
 <nav class="navbar navbar-default">
@@ -13,14 +13,14 @@ use App\Http\Controllers\ProductController;
         </button>
         <a class="navbar-brand" href="/">POG</a>
       </div>
-  
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Agents</a></li>
-          <li><a href="/catalog">Catalog</a></li>
-        </ul>        
-        <ul class="nav navbar-nav navbar-right">          
+          <li><a href="/agent">Agents</a></li>
+          <li><a href="/product">Catalog</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           @if(Session::has('user'))
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
