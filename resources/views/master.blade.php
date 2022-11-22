@@ -55,6 +55,16 @@
                 flex: 1;
                 width: auto;
             }
+            thead {
+                background-color: gray;
+                color: white;
+            }
+            tr {
+                border-bottom-width: 1px !important;
+                border-color: gray;
+                border-bottom: 1px solid gray;
+                margin-bottom: 5px;
+            }
             .navbar-brand {
                 background-color: white;
                 border-radius: 50px;
