@@ -51,7 +51,7 @@
                 max-width: 1500px;
                 margin-left: 20px;
                 margin-right: 20px;
-                margin-top: 20px;
+                margin-top: 70px;
                 flex: 1;
                 width: auto;
             }
