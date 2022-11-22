@@ -14,6 +14,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <style>
+            body {
+                display: flex;
+                flex-direction: column;
+            }
             .navbar-default {
                 position: sticky;
                 top: 0;
@@ -21,11 +25,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border-width: 0;
+                box-shadow: 0 5px 5px lightgray;
+                margin-bottom: 0;
             }
             .container-fluid {
                 flex: 1;
                 margin-right: 0;
                 margin-left: 0;
+                max-width: 1500px;
             }
             .navbar-nav {
                 margin-left: 30px;
@@ -38,6 +46,14 @@
                 background-color: gray;
                 color: white;
                 border-radius: 50px;
+            }
+            .table-image {
+                max-width: 1500px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                flex: 1;
+                width: auto;
             }
             .navbar-brand {
                 background-color: white;
