@@ -25,3 +25,4 @@ Route::get('/auth', function () {
 });
 Route::get('product',[ToyController::class,'index']);
 Route::get('agent', [AgentController::class,'index']);
+Route::get('agentcard', [AgentCardController::class,'index']);
