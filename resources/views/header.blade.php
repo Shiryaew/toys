@@ -1,44 +1,38 @@
-</html>
-<title>Toys</title>
-        <style>
-            html {
-                height: 100%;
-                width: 100%;
-            }
-            body {
-                margin: 0;
-                height: 200%;
-                width: 100%;
-                background-color: lightgray;
-            }
-            .header {
-                position: sticky;
-                top: 0;
-                width: 100%;
-                height: 100px;
-                background-color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 5px 5px gray;
-            }
-            
-            .header__name {
-                color: black;
-                font-size: 36px;
-
-            }
-           
-
-            
-
-        </style>
-		<body>
-		<div class="header">
-            <div class="header__name">
-                Производство детских игрушек
-            </div>
-
-        </div>
-		</body>
-</html>
+<?php 
+use App\Http\Controllers\ProductController;
+?>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">POG</a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Agents</a></li>
+          <li><a href="/catalog">Catalog</a></li>
+        </ul>        
+        <ul class="nav navbar-nav navbar-right">          
+          @if(Session::has('user'))
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/logout">Logout</a></li>
+            </ul>
+          </li>
+          @else
+          <li><a href="/login">Login</a></li>
+          @endif
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>

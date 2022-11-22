@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class producttype extends Model
 {
     use HasFactory;
-    protected $table = 'agent';
+    protected $table = 'producttype';
     public $timestamp = false;
     protected $primaryKey = 'ID';
     protected $fillable = ['ID','Title','DefectedPercent'];
