@@ -1,3 +1,3 @@
 <?php
-    include 'resources/views/index.php';
+    include 'resources/views/index.blade.php';
 ?>

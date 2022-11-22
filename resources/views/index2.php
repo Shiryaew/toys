@@ -18,7 +18,7 @@
                 position: sticky;
                 top: 0;
                 width: 100%;
-                height: 80px;
+                height: 100px;
                 background-color: white;
                 display: flex;
                 align-items: center;

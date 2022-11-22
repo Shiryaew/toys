@@ -12,4 +12,9 @@ class product extends Model
     public $timestamp = false;
     protected $primaryKey = 'ID';
     protected $fillable = ['ID','Title','ProductTypeID','ArticleNumber','Description','Image','ProductionPersonCount','ProductionWorkshopNumber','MinCostForAgent'];
+
+    public function ProdType()
+    {
+       // return $this->hasOne('App\Models\producttype', 'ID' );
+    }
 }
