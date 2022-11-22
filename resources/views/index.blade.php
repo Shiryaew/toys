@@ -56,9 +56,7 @@
         </div>
         <div class="btn__container">
             <button class="btn btn__first">
-                <div>
-                    Первая кнопка
-                </div>
+                <a href="/product">Продукты</a>
             </button>
             <button class="btn btn__second">
                 <div>
