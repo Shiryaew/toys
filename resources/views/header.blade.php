@@ -19,7 +19,7 @@ use App\Http\Controllers\ProductController;
         <ul class="nav navbar-nav">
           <li><a href="/product">Каталог</a></li>
           <li><a href="/agent">Агенты</a></li>
-          <li><a href="/agentcard">agentcard</a></li>
+          <li><a href="/agentcard">Карточки Агентов</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           @if(Session::has('user'))

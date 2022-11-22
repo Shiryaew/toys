@@ -30,6 +30,9 @@
                 margin-bottom: 0;
                 font-size: 17px;
             }
+            .col-12 {
+                display: flex;
+            }
             .container-fluid {
                 flex: 1;
                 margin-right: 0;
