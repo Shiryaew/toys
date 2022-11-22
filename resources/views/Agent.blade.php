@@ -29,7 +29,10 @@
  <div class="container">
   <div class="row">
     <div class="col-12">
-		<table class="table table-image" data-pagination="true">
+		<table id="AgentTable" class="table table-image" data-pagination="true">
+         //   @php
+         //   $('#AgentTable')
+         //   @endphp
 		  <thead>
 		    <tr>
 		      <th scope="col">Image</th>
@@ -46,17 +49,34 @@
 		      <td>
 				<div>
                     <span>{{$item->Title}}</span></br>
-					<span>{{$item->Logo}} продаж в год</span></br>
+					<span>{{$item->Sum}} продаж в год</span></br>
 					<span>{{$item->Phone}}</span></br>
 					<span>Приоритетность: {{$item->Priority}}</span>
 				</div>
 			  </td>
-		      <td>{{$item->Priority}}</td>
+		      <td>@php
+                      if ($item->Multiply<10000)
+                          $item->Multiply="0%";
+                      elseif ($item->Multiply<50000)
+                          $item->Multiply="5%";
+                      elseif ($item->Multiply<150000)
+                            $item->Multiply="10%";
+                      elseif ($item->Multiply<500000)
+                            $item->Multiply="20%";
+                      else
+                            $item->Multiply="25%";
+
+                  @endphp
+                  {{$item->Multiply}}
+		      </td>
 
 		    </tr>
 			@endforeach
 		  </tbody>
 		</table>
+        <div class="d-flex justify-content-center">
+
+        </div>
     </div>
   </div>
 </div>
