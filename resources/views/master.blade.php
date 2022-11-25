@@ -58,6 +58,7 @@
                 margin-top: 70px;
                 flex: 1;
                 width: auto;
+                align-self: center;
             }
             thead {
                 background-color: gray;
@@ -78,6 +79,15 @@
                 background-color: black;
             }
             li:hover {
+                background-color: lightgray;
+            }
+            .filterTable {
+                margin-top: 50px;
+                max-width: 1500px;
+                width: 1170px;
+                height: 100px;
+                align-self: center;
+
                 background-color: lightgray;
             }
             .startcontent {
