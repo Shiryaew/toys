@@ -81,15 +81,43 @@
             li:hover {
                 background-color: lightgray;
             }
-            .filterTable {
+            .filTable {
                 margin-top: 50px;
                 max-width: 1500px;
                 width: 1170px;
                 height: 100px;
                 align-self: center;
 
-                background-color: lightgray;
+                /*background-color: lightgray;*/
+                justify-content: center;
+                align-items: center;
+                display: flex;
             }
+            .filterTable {
+                height: 30px;
+                margin-left: 25px;
+                width: 200px;
+            }
+            .sortTable {
+                height: 30px;
+                margin-left: 25px;
+                width: 200px;
+
+            }
+            .searchTable {
+                height: 30px;
+                margin-left: 25px;
+                width: 200px;
+
+            }
+            .sortTableTitle {
+                margin-left: 50px;
+
+            }
+            .filterTableTitle {
+                margin-left: 50px;
+            }
+
             .startcontent {
                 min-height: 100vh;
                 height: 100vh;

@@ -26,8 +26,34 @@
       </div>/.navbar-collapse
     </div> /.container-fluid
  </nav> -->
- <div class="filterTable">
+<div class="filTable">
+    <input class="searchTable" placeholder="Введите для поиска">
 
+    </input>
+    <div class="sortTableTitle">
+        Сортировка:
+    </div>
+    <select class="sortTable">
+        <option value="1">
+            Вариант 1
+        </option>
+        <option value="2">
+            Вариант 2
+        </option>
+
+    </select>
+    <div class="filterTableTitle">
+        Фильтр:
+    </div>
+    <select class="filterTable">
+        <option value="1">
+            Вариант 1
+        </option>
+        <option value="2">
+            Вариант 2
+        </option>
+
+    </select>
 </div>
  <div class="container">
   <div class="row">
