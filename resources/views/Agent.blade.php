@@ -30,10 +30,10 @@
     <input class="searchTable" placeholder="Введите для поиска">
 
     </input>
-    <div class="sortTableTitle">
+    <div class="sortTableTitle" id="sortTableTitle" >
         Сортировка:
     </div>
-    <select class="sortTable">
+    <select class="sortTable" id="sortTable">
         <option value="1">
             Вариант 1
         </option>
@@ -42,10 +42,10 @@
         </option>
 
     </select>
-    <div class="filterTableTitle">
+    <div class="filterTableTitle" id="filterTableTitle">
         Фильтр:
     </div>
-    <select class="filterTable">
+    <select class="filterTable" id="filterTable">
         <option value="1">
             Вариант 1
         </option>
