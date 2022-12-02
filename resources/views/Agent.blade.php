@@ -25,24 +25,31 @@
         </div>
       </div>/.navbar-collapse
     </div> /.container-fluid
- </nav> -->
-<div class="filTable">
-    <input class="searchTable" placeholder="Введите для поиска">
+ </nav> 
+
+
+
+-->
+ <form method="get" >
+ <div class="filTable">
+
+    <!--<input class="searchTable" placeholder="Введите для поиска">-->
 
     </input>
     <div class="sortTableTitle" id="sortTableTitle" >
         Сортировка:
     </div>
-    <select class="sortTable" id="sortTable">
-        <option value="1">
-            Вариант 1
+    <!--https://tokmakov.msk.ru/blog/item/585-->
+    <select class="sortTable" id="sortTable"  name="Priority">
+        <option value="min" @if(request()->Priority == 'min') selected @endif>
+            Возрастание
         </option>
-        <option value="2">
-            Вариант 2
+        <option value="max" @if(request()->Priority == 'max') selected @endif>
+            Убывание
         </option>
 
     </select>
-    <div class="filterTableTitle" id="filterTableTitle">
+    <!--<div class="filterTableTitle" id="filterTableTitle">
         Фильтр:
     </div>
     <select class="filterTable" id="filterTable">
@@ -53,8 +60,11 @@
             Вариант 2
         </option>
 
-    </select>
+    </select>-->
+    <button type="submit" class="btn btn-light">Фильтровать</button>
+    
 </div>
+</form>
  <div class="container">
   <div class="row">
     <div class="col-12">
